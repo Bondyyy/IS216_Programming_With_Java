@@ -5,12 +5,12 @@ class PhanSo{
     private int tu, mau;
     
     PhanSo(int tu, int mau) {
-    if (mau == 0) {
-        throw new ArithmeticException("Loi mau so khong duoc bang 0");
+        if (mau == 0) {
+            throw new ArithmeticException("Loi mau so khong duoc bang 0");
+        }
+        this.tu = tu;
+        this.mau = mau;
     }
-    this.tu = tu;
-    this.mau = mau;
-}
     
     private static int timUCLN(int a, int b) {
     a = Math.abs(a); 
@@ -75,10 +75,10 @@ public class Bai3 {
 
         System.out.println("Nhap phan so 1: ");
         PhanSo ps1 = new PhanSo(scanIn.nextInt(), scanIn.nextInt());
-
+        
         System.out.println("Nhap phan so 2: ");
         PhanSo ps2 = new PhanSo(scanIn.nextInt(), scanIn.nextInt());
-
+  
         System.out.print("Tong: ");
         PhanSo.congPhanSo(ps1, ps2).hienThi();
 
