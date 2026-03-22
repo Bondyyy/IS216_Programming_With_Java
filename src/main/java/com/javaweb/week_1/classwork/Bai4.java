@@ -64,11 +64,11 @@ class Chuoi {
 
         int index = this.x.indexOf(chuoiCon);
         if (index == -1) {
-            System.out.println("-> Khong xuat hien.");
+            System.out.println("Khong xuat hien.");
             return;
         }
         
-        System.out.print("-> Cac vi tri xuat hien: ");
+        System.out.print("Cac vi tri xuat hien: ");
         while (index >= 0) {
             System.out.print(index + " ");
             index = this.x.indexOf(chuoiCon, index + 1);
