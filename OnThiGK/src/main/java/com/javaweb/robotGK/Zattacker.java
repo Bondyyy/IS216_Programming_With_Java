@@ -3,7 +3,7 @@ package com.javaweb.robotGK;
 import java.util.Random;
 
 public class Zattacker extends Robot {
-    private int P;
+    private final int P;
 
     public Zattacker() {
         super(20); 

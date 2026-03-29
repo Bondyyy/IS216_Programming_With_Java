@@ -12,6 +12,7 @@ public class Pedion extends Robot {
     }
     
     public Pedion(int F) {
+        super(20);
         this.F = F;
     }
 
