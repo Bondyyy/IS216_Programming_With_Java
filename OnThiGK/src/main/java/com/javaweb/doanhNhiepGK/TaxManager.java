@@ -118,7 +118,7 @@ public class TaxManager {
             b.printInfo();
         } else if (b instanceof JointStockCompany && b.tinhThue() > avgJoint) {
             b.printInfo();
+            }
         }
     }
-}
 }
